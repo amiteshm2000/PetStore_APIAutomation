@@ -1,0 +1,11 @@
+2024-09-16T22:47:33,421 [main] INFO  Utils - [TestNG] Running:
+  C:\Users\91931\eclipse-workspace\PetStore_APIAutomation\testng.xml
+
+2024-09-16T22:47:34,118 [main] INFO  testUsercreation - *****Creating User*****
+2024-09-16T22:47:38,795 [main] INFO  testUsercreation - *****User is Created*****
+2024-09-16T22:47:38,816 [main] INFO  testUsercreation - *****Searching for created User*****
+2024-09-16T22:47:40,574 [main] INFO  testUsercreation - *****User is Displayed*****
+2024-09-16T22:47:40,580 [main] INFO  testUsercreation - *****Updating user Information*****
+2024-09-16T22:47:44,252 [main] INFO  testUsercreation - *****User iinformation Updated*****
+2024-09-16T22:47:44,256 [main] INFO  testUsercreation - *****Deleting User*****
+2024-09-16T22:47:46,069 [main] INFO  testUsercreation - *****User is Deleted*****
