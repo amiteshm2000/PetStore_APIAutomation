@@ -6,7 +6,10 @@
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="api.test.testUsercreation"/>
+      <class name="api.test.TestCreateUser"/>
+      <class name="api.test.TestUpdateUserData"/>
+      <class name="api.test.TestGetUserData"/>
+      <class name="api.test.TestDeleteUser"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

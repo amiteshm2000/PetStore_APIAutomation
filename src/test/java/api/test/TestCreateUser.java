@@ -8,9 +8,9 @@ import api.payload.User;
 import api.utilities.DataProviders;
 import io.restassured.response.Response;
 
-public class DDtestUser {
+public class TestCreateUser {
 
-	@Test(priority = 1, dataProvider = "createUser", dataProviderClass = DataProviders.class)
+	@Test(dataProvider = "createUser", dataProviderClass = DataProviders.class)
 	public void testUsercreation(String username, String firstname, String lastname, String email, String pwd,
 			String ph) {
 		// TODO Auto-generated constructor stub
@@ -24,12 +24,5 @@ public class DDtestUser {
 
 		Response res = UserEndPoints.createUser(createpayload);
 		Assert.assertEquals(res.getStatusCode(), 200);
-	}
-	
-	@Test(priority=2, dataProvider = "userNames", dataProviderClass = DataProviders.class)
-	public void testDeleteUserByName(String username) {
-		Response res = UserEndPoints.deleteUser(username);
-		Assert.assertEquals(res.statusCode(), 200);
-		res.then().log().all();
 	}
 }

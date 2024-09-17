@@ -11,10 +11,11 @@ import api.endpoints.UserEndPoints;
 import api.payload.User;
 import io.restassured.response.Response;
 
-public class testUsercreation {
+public class TestUserCRUDwithRandomData {
 	User userPayload;
 	public Logger logger;
 	Faker fake = new Faker();
+	
 	@BeforeTest()
 	public void setupData() {
 		userPayload = new User();
