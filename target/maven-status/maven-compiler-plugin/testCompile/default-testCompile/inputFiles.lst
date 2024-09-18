@@ -1,8 +1,11 @@
 C:\Users\91931\eclipse-workspace\PetStore_APIAutomation\src\test\java\api\endpoints\Routes.java
 C:\Users\91931\eclipse-workspace\PetStore_APIAutomation\src\test\java\api\endpoints\UserEndPoints.java
 C:\Users\91931\eclipse-workspace\PetStore_APIAutomation\src\test\java\api\payload\User.java
-C:\Users\91931\eclipse-workspace\PetStore_APIAutomation\src\test\java\api\test\DDtestUser.java
-C:\Users\91931\eclipse-workspace\PetStore_APIAutomation\src\test\java\api\test\testUsercreation.java
+C:\Users\91931\eclipse-workspace\PetStore_APIAutomation\src\test\java\api\test\TestCreateUser.java
+C:\Users\91931\eclipse-workspace\PetStore_APIAutomation\src\test\java\api\test\TestDeleteUser.java
+C:\Users\91931\eclipse-workspace\PetStore_APIAutomation\src\test\java\api\test\TestGetUserData.java
+C:\Users\91931\eclipse-workspace\PetStore_APIAutomation\src\test\java\api\test\TestUpdateUserData.java
+C:\Users\91931\eclipse-workspace\PetStore_APIAutomation\src\test\java\api\test\TestUserCRUDwithRandomData.java
 C:\Users\91931\eclipse-workspace\PetStore_APIAutomation\src\test\java\api\utilities\DataProviders.java
 C:\Users\91931\eclipse-workspace\PetStore_APIAutomation\src\test\java\api\utilities\ExcelUtility.java
 C:\Users\91931\eclipse-workspace\PetStore_APIAutomation\src\test\java\api\utilities\ExtentReportManager.java
