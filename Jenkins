@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                // git 'https://github.com/amiteshm2000/PetStore_APIAutomation'
+                git branch: 'main', url: 'https://github.com/amiteshm2000/PetStore_APIAutomation'
+            }
+        }
+        stage('Build') {
+            steps {
+                bat 'mvn clean' // Replace with your actual build command
+            }
+        }
+        stage('Test') {
+            steps {
+                bat 'mvn test' // Replace with your actual test command
+            }
+        }
+    }
+}
