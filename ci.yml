@@ -1,0 +1,44 @@
+name: CI Pipeline
+
+# This workflow is triggered on push or pull request to the 'main' branch
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    # The job will run on the latest available Ubuntu virtual machine
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository code from GitHub
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Set up JDK 11 (You can adjust this depending on your project requirements)
+      - name: Set up Java
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt'
+          java-version: '11'
+
+      # Cache Maven dependencies to speed up subsequent builds
+      - name: Cache Maven dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
+
+      # Build the project using Maven
+      - name: Build with Maven
+        run: mvn clean
+
+      # Run tests using Maven
+      - name: Run tests
+        run: mvn test
