@@ -36,7 +36,6 @@ public class UserEndPoints {
 				.put(Routes.updateUser);
 		return res;
 	}
-	
 	public static Response deleteUser(String username) {
 //		TODO Auto-generated constructor stub
 
