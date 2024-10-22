@@ -64,5 +64,22 @@ public class DataProviders {
 		}
 	return data;
 	}
+	
+	@DataProvider(name="orderPet")
+	public String[][] orderPet() throws IOException{
+		
+		ExcelUtility exc= new ExcelUtility("./testData\\UserTestData.xlsx", "orderPet");
+		int rowNum =exc.getRowCount();
+		int cellNum=exc.getCellCount();
+		
+		String[][] data = new String[rowNum][cellNum];
+		
+		for(int i=1;i<=rowNum;i++) {
+			for(int j=0;j<cellNum;j++) {
+				data[i-1][j]=exc.getCellValue(i, j);
+			}
+		}
+	return data;
+	}
 }
 

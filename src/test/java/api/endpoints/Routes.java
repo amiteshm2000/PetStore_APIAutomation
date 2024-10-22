@@ -13,6 +13,7 @@ public class Routes {
 		public static String getUser = baseUrl+"/user/{username}";
 		public static String updateUser=baseUrl+"/user/{username}";
 		public static String deleteUser=baseUrl+"/user/{username}";
-
-
+		
+//		Pet_Module
+		public static String orderPet = baseUrl +"/store/order";
 }
