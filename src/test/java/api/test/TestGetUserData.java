@@ -14,5 +14,6 @@ public class TestGetUserData {
 		Response res = UserEndPoints.getUser(username);
 		Assert.assertEquals(res.statusCode(), 200);
 		res.then().log().all();
+		res.time();
 	}
 }

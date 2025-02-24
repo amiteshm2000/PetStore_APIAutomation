@@ -23,6 +23,7 @@ public class TestCreateUser {
 		createpayload.setPhone(ph);
 
 		Response res = UserEndPoints.createUser(createpayload);
+		
 		Assert.assertEquals(res.getStatusCode(), 200);
 	}
 }

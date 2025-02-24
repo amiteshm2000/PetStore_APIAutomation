@@ -18,7 +18,7 @@ public class TestUpdateUserData {
 		userpayload.setEmail(email);
 		Response res = UserEndPoints.updateUser(userpayload ,username);
 		Assert.assertEquals(res.statusCode(), 200);
-		res.then().log().all();
+//		res.then().log().all();
 		
 //		Response resAfterupdate = UserEndPoints.getUser(username);
 //		Assert.assertEquals(resAfterupdate.statusCode(), 200);
