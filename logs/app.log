@@ -668,6 +668,7 @@
 2024-10-22T15:27:12,123 [main] INFO  Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@5fd18419: 8 ms
 2024-10-22T15:27:12,127 [main] INFO  Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@5ab5924c: 4 ms
 2024-10-22T15:27:12,129 [main] INFO  Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@33ebe4f0: 0 ms
+<<<<<<< HEAD
 2024-10-22T15:33:08,812 [main] INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
 2024-10-22T15:33:08,819 [main] INFO  Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
 2024-10-22T15:33:08,820 [main] INFO  Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
@@ -1512,3 +1513,5 @@
 2024-11-28T12:05:28,498 [main] INFO  Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@25109608: 9 ms
 2024-11-28T12:05:28,503 [main] INFO  Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@7dd3981e: 5 ms
 2024-11-28T12:05:28,504 [main] INFO  Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@59313495: 0 ms
+=======
+>>>>>>> 0265d786e46070fc4451f01ac4b04c4d05f7753a

@@ -16,5 +16,8 @@ public class Routes {
 		
 //		Pet_Module
 		public static String orderPet = baseUrl +"/store/order";
+<<<<<<< HEAD
 		public static String addNewPet = baseUrl + "/pet";
+=======
+>>>>>>> 0265d786e46070fc4451f01ac4b04c4d05f7753a
 }
